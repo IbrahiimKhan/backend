@@ -6,7 +6,7 @@ const cookieParser = require('cookie-parser')
 const expressValidator = require("express-validator")
 const cors = require('cors')
 require ('dotenv').config();
-// const path = require("path")
+const path = require("path")
 
 
 // importing routes
@@ -47,7 +47,6 @@ app.use(cors());
 //     res.send("API is running..");
 //   });
 // }
-
 
 app.use('/api',authRoutes)
 app.use('/api',userRoutes)
